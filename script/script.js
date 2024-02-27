@@ -35,12 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Event listener for header opacity change on scroll or touchmove
-  if (window.scrollY == 0) headerBackground.style.opacity = 0;
   const eventListener = "ontouchstart" in window ? "touchmove" : "scroll";
   document.addEventListener(eventListener, handleHeaderOpacity);
 
   function handleHeaderOpacity() {
     const y = window.scrollY || window.pageYOffset;
+    if (y === 0) headerBackground.style.opacity = 0;
     const opacity = map(y, 400, 800, 0, 1);
     headerBackground.style.opacity = y > 400 ? opacity : 0;
   }
