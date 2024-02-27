@@ -1,0 +1,69 @@
+/* Media queries for mobile devices */
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  /* Adjust subheading styles */
+  .subheading {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  /* Adjust header container */
+  .header-container {
+    width: 100vw;
+    padding: 25px 25px;
+    justify-content: center;
+  }
+
+  /* Hide Get Started button */
+  .get-started-btn {
+    display: none;
+  }
+
+  /* Hide navigation */
+  nav {
+    display: none;
+  }
+
+  /* Adjust hero section */
+  .hero-section {
+    margin: 20px 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  /* Adjust hero heading */
+  .hero-left h1 {
+    font-size: 45px;
+  }
+
+  /* Hide hero span */
+  .hero-left span {
+    display: none;
+  }
+
+  /* Adjust hero image */
+  #hero-image {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* Adjust hero section background */
+  .hero-section::before {
+    height: 850px;
+    transform: scaleX(3);
+  }
+
+  /* Adjust hero buttons */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
