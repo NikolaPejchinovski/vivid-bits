@@ -76,6 +76,7 @@ header {
 /* Logo styles */
 .logo {
   width: 225px; /* Logo width */
+  filter: brightness(0) invert();
 }
 
 /* Navigation styles */
@@ -441,6 +442,62 @@ nav ul li a {
   max-width: 400px; /* Limit maximum width for images */
 }
 
+/* Testimonials Section */
+
+/* Container for testimonials section */
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure content within the section does not overflow */
+  gap: 80px; /* Spacing between testimonials */
+  height: 550px; /* Fixed height for the testimonials section */
+  width: 100%; /* Full width of the container */
+  padding: 0 220px; /* Horizontal padding */
+}
+
+/* Swiper container */
+.swiper {
+  width: 1000px; /* Set width of the swiper container */
+  height: 250px; /* Set height of the swiper container */
+}
+
+/* Container for testimonials */
+.testimonials-container {
+  display: flex; /* Display testimonials in a row */
+  gap: 100px; /* Spacing between individual testimonials */
+  max-width: 1000px; /* Limit the maximum width of the container */
+}
+
+/* Individual testimonial */
+.testimonial {
+  display: flex; /* Display contents of testimonial in a column */
+  flex: 0 0 auto; /* Allow testimonial to grow but not shrink */
+  flex-direction: column; /* Align contents of testimonial in a column */
+  align-items: center; /* Center contents horizontally */
+  text-align: center; /* Align text in center */
+  gap: 80px; /* Spacing between text and author */
+}
+
+/* Testimonial text */
+.testimonial .text {
+  max-width: 1000px; /* Limit the maximum width of the text */
+  word-break: break-all; /* Break long words */
+  white-space: wrap; /* Wrap long lines of text */
+  margin-bottom: 60px; /* Spacing at the bottom of the text */
+}
+
+/* Testimonial author */
+.testimonial .author {
+  color: var(--text); /* Color of the author text */
+}
+
+/* Author name */
+.testimonial .author .name {
+  font-weight: 600; /* Bold font weight for the author's name */
+}
+
 /* About Us Section */
 
 /* Background particles for about section */
@@ -583,6 +640,7 @@ footer {
 .logo-quote img {
   width: 250px;
   margin-bottom: 30px;
+  filter: brightness(0) invert();
 }
 
 /* Footer quote */

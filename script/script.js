@@ -2,6 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const movingText = document.querySelector(".moving-text h1");
   const headerBackground = document.getElementById("header-background");
 
+  // Testimonials Swipe Effect
+  const swiper = new Swiper(".swiper", {
+    grabCursor: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+      },
+    },
+  });
+
   // Load Particles
   particlesJS.load("particles-js", "script/particles.json", function () {
     console.log("callback - particles.js config loaded");
@@ -20,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Event listener for header opacity change on scroll or touchmove
+  if (window.scrollY == 0) headerBackground.style.opacity = 0;
   const eventListener = "ontouchstart" in window ? "touchmove" : "scroll";
   document.addEventListener(eventListener, handleHeaderOpacity);
 

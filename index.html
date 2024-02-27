@@ -10,6 +10,10 @@
     <link rel="icon" href="./img/Icon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./style/desktop.css" />
     <link rel="stylesheet" href="./style/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Vivid Bits</title>
   </head>
   <body>
@@ -155,7 +159,7 @@
       <div class="discover-more-section">
         <h2 class="subheading">Discover More</h2>
         <div class="discover-more-container">
-          <div class="branding-and-identity odd">
+          <div class="branding-and-identity odd item">
             <div class="text">
               <h3>Branding & Identity</h3>
               <span
@@ -171,7 +175,7 @@
               alt="branding-and-identity"
             />
           </div>
-          <div class="digital-marketing even">
+          <div class="digital-marketing even item">
             <div class="text">
               <h3>Digital Marketing</h3>
               <span
@@ -184,7 +188,7 @@
             </div>
             <img src="./img/Digital Marketing.svg" alt="digital-marketing" />
           </div>
-          <div class="web-design-development odd">
+          <div class="web-design-development odd item">
             <div class="text">
               <h3>Website Design & Development</h3>
               <span
@@ -200,7 +204,7 @@
               alt="website-design-and-development"
             />
           </div>
-          <div class="mobile-development even">
+          <div class="mobile-development even item">
             <div class="text">
               <h3>Mobile App Development</h3>
               <span
@@ -216,7 +220,7 @@
               alt="mobile-app-development"
             />
           </div>
-          <div class="ux-design odd">
+          <div class="ux-design odd item">
             <div class="text">
               <h3>User Experience (UX) Design</h3>
               <span
@@ -229,7 +233,7 @@
             </div>
             <img src="./img/UX Design.svg" alt="user-experience-design" />
           </div>
-          <div class="technology-integration even">
+          <div class="technology-integration even item">
             <div class="text">
               <h3>Technology Integration</h3>
               <span
@@ -247,6 +251,52 @@
           </div>
         </div>
       </div>
+
+      <!-- Testimonials -->
+      <section class="testimonials-section">
+        <h2 class="subheading">Testimonials</h2>
+        <div class="testimonials-container swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <div class="text">
+                "Vivid Bits transformed our digital presence, boosting
+                engagement and sales. Their team felt like an extension of ours,
+                tailoring strategies to our needs and going the extra mile for
+                our success."
+              </div>
+              <div class="author">
+                <div class="name">Nathan F.</div>
+                <div class="position">Marketing Manager</div>
+              </div>
+            </div>
+            <div class="testimonial swiper-slide">
+              <div class="text">
+                "Their creative web design and SEO expertise revitalized our
+                website, making it modern and user-friendly. Their
+                professionalism and dedication to educating us on digital trends
+                have significantly increased our online traffic and leads."
+              </div>
+              <div class="author">
+                <div class="name">Michael R.</div>
+                <div class="position">Founder & CEO</div>
+              </div>
+            </div>
+            <div class="testimonial swiper-slide">
+              <div class="text">
+                "From enhancing our online visibility to improving audience
+                engagement, their customized strategies and innovative approach
+                have driven our marketing efforts to new heights and positively
+                impacted our business growth."
+              </div>
+              <div class="author">
+                <div class="name">Emma L.</div>
+                <div class="position">COO</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!-- About Us Section -->
       <section class="about-section" id="about-us">
@@ -315,5 +365,6 @@
 
     <script src="./script/particles.js"></script>
     <script src="./script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
