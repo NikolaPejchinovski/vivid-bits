@@ -72,6 +72,10 @@
     align-items: center;
   }
 
+  .learn-more {
+    width: 225px;
+  }
+
   /* Adjust discover more section */
   .discover-more-section {
     padding: 0px 25px;

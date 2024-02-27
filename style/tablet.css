@@ -1,0 +1,103 @@
+/* Media queries for tablet devices */
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Prevent horizontal scrolling */
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  /* Adjust subheading styles */
+  .subheading {
+    font-size: 38px; /* Reduced font size */
+  }
+
+  /* Adjust header container */
+  .header-container {
+    padding: 25px 50px; /* Reduced horizontal padding */
+  }
+
+  /* Show Get Started button */
+  .get-started-btn {
+    display: block;
+  }
+
+  /* Show navigation */
+  nav {
+    display: block;
+  }
+
+  /* Adjust hero section */
+  .hero-section {
+    margin: 20px 50px; /* Reduced margin */
+    align-items: center; /* Centering items horizontally */
+  }
+
+  /* Adjust hero heading */
+  .hero-left h1 {
+    font-size: 45px; /* Reduced font size */
+  }
+
+  /* Adjust hero image */
+  #hero-image {
+    width: 400px; /* Reduced width */
+    height: 400px; /* Reduced height */
+  }
+
+  /* Adjust hero section background */
+  .hero-section::before {
+    height: 600px; /* Reduced height */
+    transform: scaleX(1.8); /* Reduced scale */
+  }
+
+  /* Adjust discover more section */
+  .discover-more-section {
+    padding: 0px 50px; /* Reduced horizontal padding */
+  }
+
+  /* Adjust testimonials */
+  .testimonials-section {
+    padding: 0 50px; /* Reduced horizontal padding */
+    margin: 100px 0;
+  }
+
+  .swiper {
+    width: 400px; /* Reduced width */
+    height: 300px; /* Reduced height */
+  }
+
+  /* Adjust about section */
+  .about-section {
+    height: 1200px;
+  }
+
+  .about-container {
+    gap: 60px;
+    padding: 0 50px; /* Reduced horizontal padding */
+  }
+
+  .about-right img {
+    width: 300px; /* Reduced width */
+  }
+
+  /* Adjust call-to-action section */
+  .cta-section {
+    margin: 100px 50px; /* Reduced margin */
+  }
+
+  .cta h2 {
+    font-size: 35px; /* Reduced font size */
+  }
+
+  /* Adjust services section */
+  .services {
+    margin: 100px 50px; /* Reduced margin */
+    justify-content: center; /* Centering items horizontally */
+  }
+
+  /* Adjust individual service */
+  .service {
+    width: 300px; /* Adjusted width */
+  }
+}
