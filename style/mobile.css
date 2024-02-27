@@ -2,8 +2,9 @@
 
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 768px) {
-  body {
-    overflow: hidden;
+  body,
+  html {
+    overflow-x: hidden;
   }
 
   /* Adjust subheading styles */
