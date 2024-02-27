@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const movingText = document.querySelector(".moving-text h1");
   const headerBackground = document.getElementById("header-background");
+
+  // Load Particles
   particlesJS.load("particles-js", "script/particles.json", function () {
     console.log("callback - particles.js config loaded");
   });
@@ -17,11 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Event listener for header opacity change on scroll
-  document.addEventListener("scroll", handleHeaderOpacity);
+  // Event listener for header opacity change on scroll or touchmove
+  const eventListener = "ontouchstart" in window ? "touchmove" : "scroll";
+  document.addEventListener(eventListener, handleHeaderOpacity);
 
   function handleHeaderOpacity() {
-    const y = window.scrollY;
+    const y = window.scrollY || window.pageYOffset;
     const opacity = map(y, 400, 800, 0, 1);
     headerBackground.style.opacity = y > 400 ? opacity : 0;
   }
