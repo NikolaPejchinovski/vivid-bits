@@ -11,7 +11,10 @@
   .subheading {
     width: 100%;
     display: flex;
+    justify-content: center;
     text-align: center;
+    font-size: 38px;
+    margin: 0 auto;
   }
 
   /* Adjust header container */
@@ -65,6 +68,73 @@
   /* Adjust hero buttons */
   .hero-buttons {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .discover-more-section {
+    padding: 0px 25px;
+  }
+
+  .discover-more-container div {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .text h3 {
+    width: 100%;
+  }
+
+  .discover-more-container .text {
+    flex-direction: column-reverse;
+  }
+
+  .about-section {
+    height: 1000px;
+  }
+
+  .about-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    padding: 0 25px;
+  }
+
+  .about-left {
+    justify-self: center;
+    align-items: center;
+  }
+
+  .about-right img {
+    width: 300px;
+  }
+
+  .cta-section {
+    margin: 100px 25px;
+  }
+
+  .cta {
+    width: 100%;
+  }
+
+  .cta h2 {
+    font-size: 35px;
+    z-index: 3;
+  }
+
+  .cta .maximize-potential {
+    z-index: 3;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+
+  .follow-us {
     align-items: center;
   }
 }
