@@ -135,4 +135,8 @@
   .location {
     line-height: 24px;
   }
+
+  .copyright {
+    padding: 0 25px;
+  }
 }
