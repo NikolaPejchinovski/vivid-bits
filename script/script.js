@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Event listener for header opacity change on scroll or touchmove
-  const eventListener = "ontouchstart" in window ? "touchmove" : "scroll";
+  // Event listener for header opacity change on scroll
+  const eventListener = "scroll";
   document.addEventListener(eventListener, handleHeaderOpacity);
 
   function handleHeaderOpacity() {

@@ -15,7 +15,7 @@
 
   /* Adjust header container */
   .header-container {
-    padding: 25px 50px; /* Reduced horizontal padding */
+    padding: 25px 25px; /* Reduced horizontal padding */
   }
 
   /* Show Get Started button */
@@ -28,21 +28,26 @@
     display: block;
   }
 
+  nav ul {
+    gap: 30px;
+  }
+
   /* Adjust hero section */
   .hero-section {
-    margin: 20px 50px; /* Reduced margin */
+    margin: 0px 50px; /* Reduced margin */
     align-items: center; /* Centering items horizontally */
+    height: 600px; /* Reduced height */
   }
 
   /* Adjust hero heading */
   .hero-left h1 {
-    font-size: 45px; /* Reduced font size */
+    font-size: 38px; /* Reduced font size */
   }
 
   /* Adjust hero image */
   #hero-image {
-    width: 400px; /* Reduced width */
-    height: 400px; /* Reduced height */
+    width: 350px; /* Reduced width */
+    height: 350px; /* Reduced height */
   }
 
   /* Adjust hero section background */
@@ -59,17 +64,17 @@
   /* Adjust testimonials */
   .testimonials-section {
     padding: 0 50px; /* Reduced horizontal padding */
-    margin: 100px 0;
+    margin: 50px 0;
   }
 
   .swiper {
-    width: 400px; /* Reduced width */
+    width: 600px; /* Reduced width */
     height: 300px; /* Reduced height */
   }
 
   /* Adjust about section */
   .about-section {
-    height: 1200px;
+    height: 800px;
   }
 
   .about-container {
@@ -86,18 +91,48 @@
     margin: 100px 50px; /* Reduced margin */
   }
 
+  .cta {
+    width: 100%;
+  }
+
+  .cta button {
+    z-index: 4;
+  }
+
   .cta h2 {
     font-size: 35px; /* Reduced font size */
   }
 
   /* Adjust services section */
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto;
+  }
+
   .services {
-    margin: 100px 50px; /* Reduced margin */
+    margin: 100px auto; /* Reduced margin */
     justify-content: center; /* Centering items horizontally */
   }
 
-  /* Adjust individual service */
-  .service {
-    width: 300px; /* Adjusted width */
+  /* Footer */
+  .footer-container {
+    align-items: flex-start;
+    padding: 100px 25px;
+  }
+
+  .logo-quote img {
+    width: 200px;
+    margin-bottom: 15px;
+  }
+
+  .logo-quote p {
+    font-size: 14px;
+  }
+
+  .location {
+    line-height: 24px;
   }
 }
