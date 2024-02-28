@@ -51,9 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
       window.innerWidth || document.documentElement.clientWidth;
     const position = movingText.getBoundingClientRect().x;
     let backgroundPositionX = -position - 100;
-    if (viewportWidth < 768) {
-      backgroundPositionX = -position - 500;
-    }
+    if (viewportWidth < 768) backgroundPositionX = -position - 500;
+    else if (viewportWidth < 1024) backgroundPositionX = -position - 400;
     movingText.style.backgroundPosition = `${backgroundPositionX}px 0`;
     requestAnimationFrame(updatePosition);
   }

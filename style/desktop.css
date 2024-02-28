@@ -708,9 +708,10 @@ footer {
   text-decoration: none;
   color: white;
   font-size: 18px;
+  transition: 0.3s ease;
 }
 
 /* Hover effect on footer links */
 .footer-container a:hover {
-  opacity: 0.5;
+  transform: translateY(-6px);
 }
