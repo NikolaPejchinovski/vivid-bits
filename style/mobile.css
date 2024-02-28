@@ -76,6 +76,12 @@
     width: 225px;
   }
 
+  /* Services Section */
+
+  .services {
+    justify-content: center;
+  }
+
   /* Adjust discover more section */
   .discover-more-section {
     padding: 0px 25px;

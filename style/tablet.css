@@ -114,7 +114,7 @@
 
   .services {
     margin: 100px auto; /* Reduced margin */
-    justify-content: center; /* Centering items horizontally */
+    justify-content: center;
   }
 
   /* Footer */
