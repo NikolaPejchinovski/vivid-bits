@@ -9,6 +9,10 @@
     overflow-x: hidden;
   }
 
+  #particles-js {
+    overflow-x: hidden;
+  }
+
   /* Adjust subheading styles */
   .subheading {
     width: 100%;
