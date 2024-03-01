@@ -15,7 +15,7 @@
 
   /* Adjust header container */
   .header-container {
-    padding: 25px 25px; /* Reduced horizontal padding */
+    padding: 15px 25px; /* Reduced horizontal padding */
   }
 
   /* Show Get Started button */
@@ -74,7 +74,7 @@
 
   /* Adjust about section */
   .about-section {
-    height: 800px;
+    height: 500px;
   }
 
   .about-container {
@@ -109,7 +109,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0px auto;
+    margin: 100px auto 50px auto;
   }
 
   .services {
@@ -120,7 +120,7 @@
   /* Footer */
   .footer-container {
     align-items: flex-start;
-    padding: 100px 25px;
+    padding: 35px 25px 0 25px;
   }
 
   .logo-quote img {

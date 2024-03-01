@@ -44,20 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const opacity = map(y, 400, 800, 0, 1);
     headerBackground.style.opacity = y > 400 ? opacity : 0;
   }
-
-  // Update moving text position
-  function updatePosition() {
-    var viewportWidth =
-      window.innerWidth || document.documentElement.clientWidth;
-    const position = movingText.getBoundingClientRect().x;
-    let backgroundPositionX = -position - 100;
-    if (viewportWidth < 768) backgroundPositionX = -position - 500;
-    else if (viewportWidth < 1024) backgroundPositionX = -position - 400;
-    movingText.style.backgroundPosition = `${backgroundPositionX}px 0`;
-    requestAnimationFrame(updatePosition);
-  }
-
-  requestAnimationFrame(updatePosition);
 });
 
 // Utility function for mapping values

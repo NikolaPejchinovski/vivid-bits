@@ -21,7 +21,7 @@
   /* Adjust header container */
   .header-container {
     width: 100vw;
-    padding: 25px 25px;
+    padding: 15px 25px;
     justify-content: center;
   }
 
@@ -160,11 +160,21 @@
   /* Adjust footer */
   .footer-container {
     flex-direction: column;
-    gap: 60px;
+    align-items: center;
+    height: 800px;
+    gap: 30px;
     text-align: center;
+    padding: 50px 25px 80px 25px;
   }
 
   .follow-us {
     align-items: center;
+  }
+
+  .copyright {
+    font-size: 14px;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 25px;
   }
 }
