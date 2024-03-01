@@ -39,7 +39,7 @@
   .hero-section {
     margin: 20px 25px;
     justify-content: center;
-    height: 750px;
+    height: 90vh;
     align-items: center;
     text-align: center;
     flex-direction: column-reverse;
@@ -47,7 +47,7 @@
 
   /* Adjust hero heading */
   .hero-left h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
 
   /* Hide hero span */
@@ -63,7 +63,7 @@
 
   /* Adjust hero section background */
   .hero-section::before {
-    height: 750px;
+    height: 90vh;
     transform: scaleX(3);
   }
 
