@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const movingText = document.querySelector(".moving-text h1");
   const headerBackground = document.getElementById("header-background");
 
+  document.documentElement.style.overflowX = "hidden";
+
   // Testimonials Swipe Effect
   const swiper = new Swiper(".swiper", {
     grabCursor: true,
