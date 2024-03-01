@@ -71,6 +71,7 @@
   .hero-section::before {
     height: 90vh;
     transform: scaleX(3);
+    overflow-x: hidden;
   }
 
   /* Adjust hero buttons */
