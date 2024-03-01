@@ -2,20 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const movingText = document.querySelector(".moving-text h1");
   const headerBackground = document.getElementById("header-background");
 
-  document.addEventListener(
-    "scroll",
-    function (e) {
-      // Check if scrolling horizontally
-      if (window.scrollX !== 0) {
-        // Prevent default scroll behavior
-        e.preventDefault();
-        // Optionally, you can reset the scroll position to prevent any movement
-        window.scrollTo(0, window.scrollY);
-      }
-    },
-    { passive: false }
-  );
-
   // Testimonials Swipe Effect
   const swiper = new Swiper(".swiper", {
     grabCursor: true,
