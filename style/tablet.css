@@ -67,6 +67,11 @@
     margin: 50px 0;
   }
 
+  /* Prevents word breaking */
+  .testimonial .text {
+    word-break: keep-all;
+  }
+
   .swiper {
     width: 600px; /* Reduced width */
     height: 300px; /* Reduced height */
