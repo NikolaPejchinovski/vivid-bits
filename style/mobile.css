@@ -46,6 +46,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column-reverse;
+    overflow-x: hidden;
   }
 
   /* Adjust hero heading */
