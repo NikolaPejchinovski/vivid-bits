@@ -11,10 +11,6 @@
     -webkit-overflow-x: hidden;
   }
 
-  * {
-    overflow-x: hidden;
-  }
-
   /* Adjust subheading styles */
   .subheading {
     font-size: 38px; /* Reduced font size */
@@ -33,6 +29,7 @@
   /* Show navigation */
   nav {
     display: block;
+    left: 54%;
   }
 
   nav ul {
@@ -50,6 +47,10 @@
   /* Adjust hero heading */
   .hero-left h1 {
     font-size: 38px; /* Reduced font size */
+  }
+
+  .hero-left span {
+    max-width: 400px;
   }
 
   /* Adjust hero image */
