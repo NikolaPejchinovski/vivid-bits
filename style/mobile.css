@@ -11,6 +11,10 @@
     -webkit-overflow-x: hidden;
   }
 
+  #particles-js {
+    overflow: hidden;
+  }
+
   /* Adjust subheading styles */
   .subheading {
     width: 100%;
@@ -40,7 +44,7 @@
 
   /* Adjust hero section */
   .hero-section {
-    margin: 20px 25px;
+    margin: 0px 0px;
     justify-content: center;
     height: 90vh;
     align-items: center;
