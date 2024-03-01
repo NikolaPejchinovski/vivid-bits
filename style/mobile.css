@@ -184,3 +184,21 @@
     padding: 0 25px;
   }
 }
+
+/* Smaller devices Landscape Mode */
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+  .hero-section {
+    flex-direction: row;
+    text-align: left;
+    height: 100vh;
+  }
+
+  .hero-buttons {
+    align-items: flex-start;
+  }
+
+  .hero-section::before {
+    height: 100vh;
+    transform: scaleX(3);
+  }
+}
