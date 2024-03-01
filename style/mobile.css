@@ -3,7 +3,7 @@
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 768px) {
   /* Prevent horizontal scrolling */
-  body,
+  .custom-body-class,
   html {
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
