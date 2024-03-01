@@ -15,12 +15,6 @@
     position: relative;
   }
 
-  #particles-js {
-    overflow: hidden;
-    top: 0;
-    left: 0;
-  }
-
   /* Adjust subheading styles */
   .subheading {
     width: 100%;
