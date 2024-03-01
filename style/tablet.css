@@ -7,7 +7,12 @@
   html,
   .wrapper {
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
     -webkit-overflow-x: hidden;
+  }
+
+  * {
+    overflow-x: hidden;
   }
 
   /* Adjust subheading styles */
