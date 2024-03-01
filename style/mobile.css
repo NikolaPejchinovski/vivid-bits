@@ -7,12 +7,6 @@
   html,
   .wrapper {
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    -webkit-overflow-x: hidden;
-  }
-
-  .custom-body-class {
-    position: relative;
   }
 
   /* Adjust subheading styles */
