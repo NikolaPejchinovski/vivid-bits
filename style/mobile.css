@@ -70,6 +70,7 @@
   /* Adjust hero section background */
   .hero-section::before {
     height: 90vh;
+    width: 100vw;
     transform: scaleX(3);
     overflow-x: hidden;
   }
