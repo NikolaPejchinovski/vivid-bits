@@ -11,6 +11,10 @@
     -webkit-overflow-x: hidden;
   }
 
+  .custom-body-class {
+    position: relative;
+  }
+
   #particles-js {
     overflow: hidden;
   }
