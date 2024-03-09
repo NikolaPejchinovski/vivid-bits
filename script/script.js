@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const movingText = document.querySelector(".moving-text h1");
   const headerBackground = document.getElementById("header-background");
+  const copyrightYear = document.querySelector(".copyright-year");
 
   document.documentElement.style.overflowX = "hidden";
+
+  // Get and automatically update the copyright year
+  loadCopyrightYear();
 
   // Testimonials Swipe Effect
   const swiper = new Swiper(".swiper", {
@@ -45,6 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (y === 0) headerBackground.style.opacity = 0;
     const opacity = map(y, 400, 800, 0, 1);
     headerBackground.style.opacity = y > 400 ? opacity : 0;
+  }
+
+  // Get and automatically update the copyright year
+  function loadCopyrightYear() {
+    const currentYear = new Date().getFullYear(); // Get current year
+    copyrightYear.innerHTML = currentYear; // Update the year on screen(footer)
   }
 });
 
