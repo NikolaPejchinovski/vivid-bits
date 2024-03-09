@@ -33,6 +33,162 @@ body {
 
 /* Utility Styles */
 
+/* Styles for the close button */
+.close {
+  position: absolute; /* Position the close button */
+  top: 20px; /* Distance from the top */
+  right: 30px; /* Distance from the right */
+  width: 40px; /* Make Button Click Point Bigger */
+  height: 40px; /* Make Button Click Point Bigger */
+  padding: 10px; /* Make Button Click Point Bigger */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.close * {
+  transform: translateY(-50%);
+}
+
+/* Styles for close button lines on hover */
+.close:hover .one {
+  transform: rotate(-45deg); /* Rotate first line on hover */
+}
+
+.close:hover .two {
+  transform: rotate(45deg); /* Rotate second line on hover */
+}
+
+/* Common styles for close button lines */
+.close span {
+  display: block; /* Display as block element */
+  background-color: white; /* Line color */
+  width: 2px; /* Line width */
+  height: 25px; /* Line height */
+}
+
+/* Styles for the first line of the close button */
+.close .one {
+  transform: rotate(45deg); /* Initial rotation */
+  position: absolute; /* Positioning */
+  top: 50%; /* Distance from the top */
+  left: 50%; /* Distance from the left */
+  transition: 0.3s ease; /* Smooth transition */
+}
+
+/* Styles for the second line of the close button */
+.close .two {
+  transform: rotate(-45deg); /* Initial rotation */
+  position: absolute; /* Positioning */
+  top: 50%; /* Distance from the top */
+  left: 50%; /* Distance from the left */
+  transition: 0.3s ease; /* Smooth transition */
+}
+
+/* Styles for the contact container */
+.contact-container {
+  display: none; /* Initially hidden */
+  position: fixed; /* Fixed position */
+  align-items: center; /* Center alignment */
+  justify-content: center; /* Center alignment */
+  z-index: 100000; /* Z-index to appear on top */
+  left: 0; /* Distance from the left */
+  top: 0; /* Distance from the top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrolling */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Styles for the open contact container */
+.contact-container.open {
+  display: flex; /* Display when open */
+}
+
+/* Styles for the contact form container */
+.contact-form-container {
+  position: relative; /* Relative position */
+  background-color: var(--primary-color); /* Background color */
+  border-radius: 12px; /* Border radius */
+  width: 650px; /* Width */
+  height: 550px; /* Height */
+  padding: 35px; /* Padding */
+}
+
+/* Styles for the contact us text */
+.contact-us-text {
+  display: flex; /* Display as flex */
+  flex-direction: column; /* Column direction */
+  color: white; /* Text color */
+}
+
+.contact-us-text h2 {
+  font-size: 45px; /* Font size */
+  font-weight: bold; /* Font weight */
+}
+
+.contact-us-text h3 {
+  font-size: 26px; /* Font size */
+  font-weight: 500; /* Font weight */
+}
+
+/* Styles for the contact form */
+.contact-form {
+  margin: 30px 0; /* Margin */
+  display: flex; /* Display as flex */
+  flex-direction: column; /* Column direction */
+  font-family: inherit; /* Inherit font family */
+  font-size: 20px; /* Font size */
+}
+
+/* Styles for the contact form labels */
+.contact-form label {
+  color: white; /* Text color */
+}
+
+/* Styles for the contact form inputs */
+.contact-form input {
+  height: 45px; /* Height */
+  background-color: #008b7c; /* Background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 6px; /* Border radius */
+  font-size: 20px; /* Font size */
+  padding: 0 10px; /* Padding */
+  margin: 17px 0; /* Margin */
+}
+
+/* Styles for the contact form input placeholders */
+.contact-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Placeholder color */
+  font-weight: 200; /* Font weight */
+}
+
+/* Styles for the contact form button */
+.contact-form button {
+  background-color: var(--red); /* Background color */
+  color: white; /* Text color */
+  font-family: inherit; /* Inherit font family */
+  font-size: 18px; /* Font size */
+  width: 150px; /* Width */
+  height: 45px; /* Height */
+  border: none; /* No border */
+  border-radius: 12px; /* Border radius */
+  align-self: flex-end; /* Align to end of container */
+  margin: 10px 0; /* Margin top and bottom */
+  transition: 0.2s ease; /* Smooth transition */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Styles for the contact form button on hover */
+.contact-form button:hover {
+  background-color: white; /* Background color on hover */
+  color: var(--red); /* Text color on hover */
+}
+
+/* Styles for the contact form button when active */
+.contact-form button:active {
+  transform: scale(0.95); /* Scale down when active */
+}
+
 /* Subheading style */
 .subheading {
   font-size: 45px;
@@ -50,6 +206,8 @@ body {
   background-color: var(--primary-color); /* Using primary color variable */
   width: 100%; /* Full width */
   height: 90px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   opacity: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 999;
@@ -482,7 +640,7 @@ nav ul li a {
   height: 100%;
   background-color: var(--primary-color); /* Using primary color variable */
   padding: 0 150px;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 
 /* About left content */
@@ -578,6 +736,8 @@ footer {
   height: 100%;
   background-color: var(--primary-color); /* Using primary color variable */
   color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 /* Footer content container */

@@ -19,6 +19,48 @@
   </head>
   <div class="wrapper">
     <body class="custom-body-class">
+      <!-- Pop Up Contact Form -->
+      <div class="contact-container">
+        <div class="contact-form-container">
+          <div class="close">
+            <div class="close-lines">
+              <span class="one"></span><span class="two"></span>
+            </div>
+          </div>
+          <div class="contact-us-text">
+            <h2>Contact Us</h2>
+            <h3>Start Elevating</h3>
+          </div>
+          <form
+            class="contact-form"
+            action="./script/contact.php"
+            method="POST"
+          >
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ex. John Doe"
+            />
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Ex. johndoe@gmail.com"
+            />
+            <label for="message">Message:</label>
+            <input
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Enter your message here..."
+            />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
       <!-- Header -->
       <div id="header-background"></div>
       <header>
@@ -106,9 +148,7 @@
                   alt=""
                   class="service-icon"
               /></i>
-              <strong class="service-heading"
-                >User Experience (UX) Design</strong
-              >
+              <strong class="service-heading">UI/UX Design</strong>
               <span class="service-text"
                 >Curate seamless, intuitive digital interactions.</span
               >
@@ -190,9 +230,9 @@
             </div>
             <div class="ux-design odd item">
               <div class="text">
-                <h3>User Experience (UX) Design</h3>
+                <h3>UI/UX Design</h3>
                 <span
-                  >Elevating the user journey to new heights, our UX design
+                  >Elevating the user journey to new heights, our UI/UX design
                   expertise transforms digital interactions into a harmonious
                   and intuitive experience. Every touchpoint is meticulously
                   crafted for seamless navigation, ensuring a user-centric

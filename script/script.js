@@ -1,9 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const movingText = document.querySelector(".moving-text h1");
   const headerBackground = document.getElementById("header-background");
   const copyrightYear = document.querySelector(".copyright-year");
+  const startElevating = document.querySelectorAll(".maximize-potential");
+  const contactContainer = document.querySelector(".contact-container");
+  const closeBtn = document.querySelector(".close");
 
   document.documentElement.style.overflowX = "hidden";
+
+  // Open Contact Form
+
+  startElevating.forEach((button) => {
+    button.addEventListener("click", () => {
+      contactContainer.classList.add("open");
+    });
+  });
+
+  // Close Contact Form
+
+  closeBtn.addEventListener("click", () => {
+    contactContainer.classList.remove("open");
+  });
 
   // Get and automatically update the copyright year
   loadCopyrightYear();
