@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = `Name: ${name.value} <br/> Email: ${email.value} <br/> Subject: ${subject} <br/> Message: ${message.value}`;
 
     Email.send({
-      SecureToken: "270a7911-8260-4b96-a86f-113571ec50fc",
+      SecureToken: "fd2cb210-f5d2-4ea5-9711-6b786350b6f1",
       To: "mangodudenikola@gmail.com",
       From: email.value,
       Subject: subject,
