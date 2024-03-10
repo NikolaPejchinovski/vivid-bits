@@ -21,6 +21,17 @@
     <body class="custom-body-class">
       <!-- Pop Up Contact Form -->
       <div class="contact-container">
+        <div id="successMessage" class="success-message" style="display: none">
+          <h2>Message Sent Successfully!</h2>
+          <h3>
+            Thank you for reaching out to us. Your message has been received,
+            and we will get back to you as soon as possible.
+          </h3>
+          <p>
+            Please remember to check your spam or junk folder if you don't see
+            our reply in your inbox.
+          </p>
+        </div>
         <div class="contact-form-container">
           <div class="close">
             <div class="close-lines">
@@ -31,17 +42,14 @@
             <h2>Contact Us</h2>
             <h3>Start Elevating</h3>
           </div>
-          <form
-            class="contact-form"
-            action="./script/contact.php"
-            method="POST"
-          >
+          <form class="contact-form" method="POST">
             <label for="name">Name:</label>
             <input
               type="text"
               name="name"
               id="name"
               placeholder="Ex. John Doe"
+              required
             />
             <label for="email">Email:</label>
             <input
@@ -49,6 +57,7 @@
               name="email"
               id="email"
               placeholder="Ex. johndoe@gmail.com"
+              required
             />
             <label for="message">Message:</label>
             <input
@@ -56,6 +65,7 @@
               name="message"
               id="message"
               placeholder="Enter your message here..."
+              required
             />
             <button type="submit">Send</button>
           </form>
@@ -415,6 +425,7 @@
 
       <script src="./script/particles.js"></script>
       <script src="./script/script.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>
   </div>

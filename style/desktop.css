@@ -84,6 +84,37 @@ body {
 }
 
 /* Styles for the contact container */
+.success-message {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 550px;
+  z-index: 9999999;
+}
+
+.success-message h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.success-message h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.success-message p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .contact-container {
   display: none; /* Initially hidden */
   position: fixed; /* Fixed position */
@@ -137,6 +168,10 @@ body {
   flex-direction: column; /* Column direction */
   font-family: inherit; /* Inherit font family */
   font-size: 20px; /* Font size */
+}
+
+.invisible {
+  display: none;
 }
 
 /* Styles for the contact form labels */
