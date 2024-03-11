@@ -20,6 +20,11 @@
     height: 100%;
   }
 
+  /* Contact Form */
+  .contact-form-container {
+    width: 90%;
+  }
+
   /* Adjust subheading styles */
   .subheading {
     width: 100%;
