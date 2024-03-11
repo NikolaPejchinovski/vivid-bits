@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const headerBackground = document.getElementById("header-background");
   const copyrightYear = document.querySelector(".copyright-year");
+  const getStarted = document.querySelector(".get-started-btn");
   const startElevating = document.querySelectorAll(".maximize-potential");
   const contactContainer = document.querySelector(".contact-container");
   const contactForm = document.querySelector(".contact-form");
@@ -11,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".close");
 
   document.documentElement.style.overflowX = "hidden";
-  // c136063d-0709-4cd2-8c8d-c46a329b956f
 
   // Contact Form Submit
   contactForm.addEventListener("submit", (e) => {
@@ -66,6 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Open Contact Form
+
+  getStarted.addEventListener("click", () =>
+    contactContainer.classList.add("open")
+  );
 
   startElevating.forEach((button) => {
     button.addEventListener("click", () => {
