@@ -21,6 +21,11 @@
   }
 
   /* Contact Form */
+  .close {
+    top: 10px;
+    right: 20px;
+  }
+
   .contact-form-container {
     width: 90%;
   }
@@ -195,6 +200,10 @@
     gap: 30px;
     text-align: center;
     padding: 50px 25px 80px 25px;
+  }
+
+  .logo-quote {
+    align-items: center;
   }
 
   .follow-us {
