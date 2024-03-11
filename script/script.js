@@ -61,20 +61,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Open Contact Form
-  getStarted.addEventListener("click", () =>
-    contactContainer.classList.add("open")
-  );
+  getStarted.addEventListener("click", () => {
+    contactContainer.classList.add("open");
+    document.documentElement.style.overflow = "hidden";
+  });
 
   startElevating.forEach((button) => {
-    button.addEventListener("click", () =>
-      contactContainer.classList.add("open")
-    );
+    button.addEventListener("click", () => {
+      contactContainer.classList.add("open");
+      document.documentElement.style.overflow = "hidden";
+    });
   });
 
   // Close Contact Form
-  closeBtn.addEventListener("click", () =>
-    contactContainer.classList.remove("open")
-  );
+  closeBtn.addEventListener("click", () => {
+    contactContainer.classList.remove("open");
+    document.documentElement.style.overflow = "visible";
+  });
 
   // Get and automatically update the copyright year
   loadCopyrightYear();
