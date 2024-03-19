@@ -124,6 +124,7 @@ body {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scrolling */
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(10px);
 }
 
 /* Styles for the open contact container */
@@ -139,6 +140,7 @@ body {
   position: relative; /* Relative position */
   background-color: var(--primary-color); /* Background color */
   border-radius: 6px; /* Border radius */
+  z-index: 100001;
   width: 650px; /* Width */
   height: 600px;
   padding: 35px; /* Padding */
